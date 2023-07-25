@@ -1,0 +1,45 @@
+/* css_basic/styles.css */
+
+/* Apply Flexbox to <body> container */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body takes at least the full viewport height */
+    margin: 0; /* Reset default margin to avoid unwanted spacing */
+  }
+  
+  /* Apply Flexbox to <main> container */
+  main {
+    display: flex;
+    flex-direction: row;
+    flex: auto; /* Automatically fill the available space within the <body> container */
+  }
+  
+  /* Content of the header tag */
+  header {
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  /* Content of the article tag */
+  article {
+    flex: 2; /* Take up 2/3 of the available width in the <main> container */
+    background-color: #f9f9f9;
+    padding: 20px;
+    overflow-y: auto; /* Enable scrolling if the content overflows */
+  }
+  
+  /* Content of the aside tag */
+  aside {
+    flex: 1; /* Take up 1/3 of the available width in the <main> container */
+    background-color: #f5f5f5;
+    padding: 20px;
+    overflow-y: auto; /* Enable scrolling if the content overflows */
+  }
+  
+  /* Content of the footer tag */
+  footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-top: auto; /* Push the footer to the bottom of the page */
+  }
